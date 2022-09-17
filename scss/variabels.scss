@@ -11,24 +11,24 @@ $font-semi-bold: 600;
 $font-bold: 700;
 
 // COLORS
-$first-color: #CC4B2C;
+$first-color: #cc4b2c;
 $color-dark: #662616;
-$color-darken: #290F09;
-$text-color: #54423D;
-$color-light: #EAE7E6;
-$color-lighten: #FFFAFA;
+$color-darken: #290f09;
+$text-color: #54423d;
+$color-light: #eae7e6;
+$color-lighten: #fffafa;
 
 // FONT / TYPOGRAPHY
-$body-font: 'Poppins', sans-serif;
+$body-font: "Poppins", sans-serif;
 $h1-font-size: 1.5rem;
 $h2-font-size: 1.25rem;
 $h3-font-size: 1rem;
-$normal-font-size: .938rem;
-$small-font-size: .813rem;
-$smaller-font-size: .75rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813rem;
+$smaller-font-size: 0.75rem;
 
 // MARGIN
-$mb-1: .5rem;
+$mb-1: 0.5rem;
 $mb-2: 1rem;
 $mb-3: 1.5rem;
 $mb-4: 2rem;
@@ -40,10 +40,10 @@ $z-fixed: 100;
 // MEDIA QUERY
 
 @mixin media-query {
-    $h1-font-size: 2.25rem;
-    $h2-font-size: 1.5rem;
-    $h3-font-size: 1.25rem;
-    $normal-font-size: 1rem;
-    $small-font-size: .875rem;
-    $smaller-font-size: .813rem;
+  $h1-font-size: 2.25rem;
+  $h2-font-size: 1.5rem;
+  $h3-font-size: 1.25rem;
+  $normal-font-size: 1rem;
+  $small-font-size: 0.875rem;
+  $smaller-font-size: 0.813rem;
 }
