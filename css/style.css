@@ -12,12 +12,15 @@ body {
   margin: 3rem 0 0 0;
   font-size: 0.938rem;
   font-weight: 500;
-  background-color: #FFFAFA;
-  color: #54423D;
+  background-color: #fffafa;
+  color: #54423d;
   line-height: 1.6;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -33,7 +36,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #54423D;
+  color: #54423d;
 }
 
 img {
@@ -48,7 +51,7 @@ img {
 
 .section-title {
   font-size: 1.5rem;
-  color: #CC4B2C;
+  color: #cc4b2c;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -56,7 +59,7 @@ img {
 .section-subtitle {
   display: block;
   font-size: 0.813rem;
-  color: #290F09;
+  color: #290f09;
   text-align: center;
   font-weight: 700;
   margin-bottom: 0.25rem;
@@ -79,7 +82,7 @@ img {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #FFFAFA;
+  background-color: #fffafa;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -98,7 +101,7 @@ img {
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #CC4B2C;
+  background-color: #cc4b2c;
   transition: 0.5s;
 }
 
@@ -119,12 +122,12 @@ img {
   margin-left: 3em;
   font-size: 1rem;
   text-transform: uppercase;
-  color: #FFFAFA;
+  color: #fffafa;
   font-weight: 700;
   transition: 0.3s;
 }
 .nav__link :hover {
-  color: #54423D;
+  color: #54423d;
 }
 
 .nav__toggle {
@@ -138,7 +141,7 @@ img {
 }
 
 .active {
-  color: #54423D;
+  color: #54423d;
 }
 
 .home__container {
@@ -161,7 +164,7 @@ img {
   padding-left: 0.8rem;
   width: 200px;
   height: 200px;
-  background-color: #CC4B2C;
+  background-color: #cc4b2c;
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 1rem;
@@ -173,7 +176,7 @@ img {
 
 .home__title {
   font-size: 1.5rem;
-  color: #CC4B2C;
+  color: #cc4b2c;
   font-weight: 600;
 }
 
@@ -187,13 +190,13 @@ img {
   margin-bottom: 5rem;
 }
 .home__social :hover {
-  background-color: #290F09;
+  background-color: #662616;
 }
 
 .home__social-link {
   display: inline-flex;
-  background-color: #CC4B2C;
-  color: #FFFAFA;
+  background-color: #cc4b2c;
+  color: #fffafa;
   font-size: 1.1rem;
   border-radius: 50%;
   padding: 0.4rem;
@@ -207,28 +210,41 @@ img {
 
 .button {
   display: inline-block;
-  background-color: #CC4B2C;
-  color: #FFFAFA;
+  background-color: #cc4b2c;
+  color: #fffafa;
   padding: 1rem 0;
   font-weight: 600;
   border-radius: 0.5rem;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
-.button :hover {
+
+.button:hover {
   background-color: #662616;
 }
 
 .button__light {
-  background-color: #FFFAFA;
-  color: #CC4B2C;
+  background-color: #fffafa;
+  color: #cc4b2c;
 }
 .button__light :hover {
-  color: #FFFAFA;
+  color: #fffafa;
 }
 
 .projects__container {
   justify-content: center;
   row-gap: 2rem;
+  margin-bottom: 3.5em;
+}
+
+.project__bar {
+  background-color: #cc4b2c;
+  margin-bottom: 1.5em;
+  color: #fffafa;
+  border-radius: 0.5rem;
+}
+
+.project__bar-title {
+  padding: 10px;
 }
 
 .projects__img {
@@ -254,19 +270,19 @@ img {
 .projects__link {
   display: inline-flex;
   font-size: 1.5rem;
-  background-color: #FFFAFA;
-  color: #CC4B2C;
+  background-color: #fffafa;
+  color: #cc4b2c;
   padding: 0.25rem;
   border-radius: 0.25rem;
   margin-bottom: 1rem;
 }
 .projects__link :hover {
-  color: #290F09;
+  color: #290f09;
 }
 
 .projects__title {
   font-size: 1.25rem;
-  color: #FFFAFA;
+  color: #fffafa;
 }
 
 .projects__img:hover .projects__data {
@@ -274,8 +290,8 @@ img {
 }
 
 .footer {
-  background-color: #290F09;
-  color: #FFFAFA;
+  background-color: #290f09;
+  color: #fffafa;
   text-align: center;
 }
 
@@ -294,8 +310,8 @@ img {
 
 .footer__link {
   display: inline-flex;
-  background-color: #CC4B2C;
-  color: #FFFAFA;
+  background-color: #cc4b2c;
+  color: #fffafa;
   font-size: 1.1rem;
   border-radius: 50%;
   padding: 0.4rem;
@@ -304,13 +320,13 @@ img {
 }
 
 .footer__link:hover {
-  background-color: #FFFAFA;
-  color: #CC4B2C;
+  background-color: #fffafa;
+  color: #cc4b2c;
 }
 
 .footer__copy {
   font-size: 0.75rem;
-  color: #54423D;
+  color: #54423d;
 }
 
 @media screen and (min-width: 768px) {
@@ -327,7 +343,7 @@ img {
     background: none;
   }
   .footer__container {
-    background-color: #290F09;
+    background-color: #290f09;
     padding: 3rem 0;
     border-radius: 0.5rem;
   }
@@ -340,7 +356,9 @@ img {
   .header-1 {
     width: 0;
   }
-  .nav__toggle, .nav__logo, .nav__close {
+  .nav__toggle,
+.nav__logo,
+.nav__close {
     display: none;
   }
   .nav__menu {
