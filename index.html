@@ -1,138 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Page</title>
     <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- CDNJS CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Boxicons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    />
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="lightbox/lightbox.css" />
+  </head>
 
-<body>
+  <body>
     <!-- HEADER -->
     <header class="header-1">
-        <nav class="nav bd-grid">
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
+      <nav class="nav bd-grid">
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
 
-            <div>
-                <a href="#" class="nav__logo">Budi</a>
-            </div>
+        <div>
+          <a href="#" class="nav__logo">Budi</a>
+        </div>
 
-            <div class="nav__menu" id="nav-menu">
-                <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x'></i>
-                </div>
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
 
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                </ul>
-            </div>
-        </nav>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main class="main-1">
-        <!-- HOME -->
-        <section class="home" id="home">
-            <div class="home__container bd-grid">
-                <div class="home__data">
-                    <div class="home__img">
-                        <img src="img/me.png" alt="">
-                    </div>
-
-                    <h1 class="home__title">Budi Prayoga</h1>
-                    <span class="home__kuliah">Politeknik Negeri Jakarta</span>
-
-                    <div class="home__social">
-                        <a href="https://www.instagram.com/budiiprayoga" class="home__social-link" target="_blank"><i
-                                class='bx bxl-instagram'></i></a>
-                        <a href="https://github.com/budiiprayoga" class="home__social-link" target="_blank"><i
-                                class='bx bxl-github'></i></a>
-                    </div>
-
-                    <a href="#" class="button home__button">Download CV</a>
-                </div>
+      <!-- HOME -->
+      <section class="home" id="home">
+        <div class="home__container bd-grid">
+          <div class="home__data">
+            <div class="home__img">
+              <img src="img/me.png" alt="" class="profile__img" />
             </div>
-        </section>
 
-        <!-- PROJECTS -->
-        <section class="projects section" id="projects">
-            <span class="section-subtitle">My Portfolio</span>
-            <h2 class="section-title">Recent Projects</h2>
+            <h1 class="home__title">Budi Prayoga</h1>
+            <span class="home__kuliah">Politeknik Negeri Jakarta</span>
 
-            <div class="projects__container bd-grid">
-                <div class="projects__img">
-                    <img src="img/naturio.png" alt="">
-
-                    <div class="projects__data">
-                        <a href="https://budiiprayoga.github.io/naturio-landing-page/" class="projects__link" target="_blank"><i class='bx bxs-navigation'></i></a>
-                        <span class="projects__title">Naturio</span>
-                    </div>
-                </div>
-                
-                <div class="projects__img">
-                    <img src="img/tahupee.png" alt="">
-
-                    <div class="projects__data">
-                        <a href="https://budiiprayoga.github.io/tahupee-promotion-website/" class="projects__link" target="_blank"><i class='bx bxs-navigation'></i></a>
-                        <span class="projects__title">Tahupee</span>
-                    </div>
-                </div>
-
-                <div class="projects__img">
-                    <img src="img/webinar-landing-page.png" alt="">
-
-                    <div class="projects__data">
-                        <a href="https://budiiprayoga.github.io/webinar-landing-page/" class="projects__link" target="_blank"><i class='bx bxs-navigation'></i></a>
-                        <span class="projects__title">Webinar Landing Page</span>
-                    </div>
-                </div>
-
-                <div class="projects__img">
-                    <img src="img/sitex.png" alt="">
-
-                    <div class="projects__data">
-                        <a href="https://budiiprayoga.github.io/survey-form/" class="projects__link" target="_blank"><i class='bx bxs-navigation'></i></a>
-                        <span class="projects__title">SiteX</span>
-                    </div>
-                </div>
-
-                <div class="projects__img">
-                    <img src="img/biography.png" alt="">
-
-                    <div class="projects__data">
-                        <a href="https://budiiprayoga.github.io/bio-bj-habibie/" class="projects__link" target="_blank"><i class='bx bxs-navigation'></i></a>
-                        <span class="projects__title">Biography</span>
-                    </div>
-                </div>
+            <div class="home__social">
+              <a
+                href="https://www.instagram.com/budiiprayoga"
+                class="home__social-link"
+                target="_blank"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                href="https://github.com/budiiprayoga"
+                class="home__social-link"
+                target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
             </div>
-        </section>
+
+            <a
+              href="https://drive.google.com/file/d/1LlyZUujccRy3FnxDnQecMFKfEp5meEKF/view?usp=sharing"
+              class="button home__button"
+              target="_blank"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="projects section" id="projects">
+        <span class="section-subtitle">My Portfolio</span>
+        <h2 class="section-title">Recent Projects</h2>
+
+        <!-- Project Tile -->
+        <!-- Web Design -->
+        <div class="project__bar bd-grid">
+          <div class="project__bar-title">&#9660; Web Design</div>
+        </div>
+
+        <div class="projects__container bd-grid">
+          <div class="projects__img">
+            <img src="img/naturio.png" alt="" />
+
+            <div class="projects__data">
+              <a
+                href="https://budiiprayoga.github.io/naturio-landing-page/"
+                class="projects__link"
+                target="_blank"
+                ><i class="bx bxs-navigation"></i
+              ></a>
+              <span class="projects__title">Naturio Landing Page</span>
+            </div>
+          </div>
+
+          <div class="projects__img">
+            <img src="img/tahupee.png" alt="" />
+
+            <div class="projects__data">
+              <a
+                href="https://budiiprayoga.github.io/tahupee-promotion-website/"
+                class="projects__link"
+                target="_blank"
+                ><i class="bx bxs-navigation"></i
+              ></a>
+              <span class="projects__title">Tahupee</span>
+            </div>
+          </div>
+
+          <div class="projects__img">
+            <img src="img/webinar-landing-page.png" alt="" />
+
+            <div class="projects__data">
+              <a
+                href="https://budiiprayoga.github.io/webinar-landing-page/"
+                class="projects__link"
+                target="_blank"
+                ><i class="bx bxs-navigation"></i
+              ></a>
+              <span class="projects__title">Webinar Landing Page</span>
+            </div>
+          </div>
+
+          <div class="projects__img">
+            <img src="img/sitex.png" alt="" />
+
+            <div class="projects__data">
+              <a
+                href="https://budiiprayoga.github.io/survey-form/"
+                class="projects__link"
+                target="_blank"
+                ><i class="bx bxs-navigation"></i
+              ></a>
+              <span class="projects__title">SiteX</span>
+            </div>
+          </div>
+
+          <div class="projects__img">
+            <img src="img/biography.png" alt="" />
+
+            <div class="projects__data">
+              <a
+                href="https://budiiprayoga.github.io/bio-bj-habibie/"
+                class="projects__link"
+                target="_blank"
+                ><i class="bx bxs-navigation"></i
+              ></a>
+              <span class="projects__title">Biography</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design Graphics -->
+        <div class="project__bar bd-grid">
+          <div class="project__bar-title">&#9660; Design Graphics</div>
+        </div>
+
+        <!-- Project Tile -->
+        <div class="projects__container bd-grid">
+          <div class="projects__img">
+            <a
+              href="img/mata.jpg"
+              data-lightbox="design"
+              data-title="Poster - Fun Fact Mata"
+            >
+              <img src="img/mata_display.png" alt="" />
+            </a>
+          </div>
+
+          <div class="projects__img">
+            <a
+              href="img/Feed_WINNER.jpg"
+              data-lightbox="design"
+              data-title="Design E-Sport Winner - Cover"
+            >
+              <a
+                href="img/Feed_PUBG.jpg"
+                data-lightbox="design"
+                data-title="Design E-Sport Winner - PUBG"
+              >
+                <a
+                  href="img/Feed_ML.jpg"
+                  data-lightbox="design"
+                  data-title="Design E-Sport Winner - MOBILE LEGEND"
+                >
+                  <a
+                    href="img/Feed_CHESS.jpg"
+                    data-lightbox="design"
+                    data-title="Design E-Sport Winner - CHESS"
+                  >
+                    <a
+                      href="img/Feed_PB.jpg"
+                      data-lightbox="design"
+                      data-title="Design E-Sport Winner - POINT BLANK"
+                    >
+                      <a
+                        href="img/Feed_VALORANT.jpg"
+                        data-lightbox="design"
+                        data-title="Design E-Sport Winner - VALORANT"
+                      >
+                        <img src="img/e-sport_display.png" alt="" />
+                      </a>
+                    </a>
+                  </a>
+                </a>
+              </a>
+            </a>
+          </div>
+
+          <div class="projects__img">
+            <a
+              href="img/logo-tahupee.png"
+              data-lightbox="design"
+              data-title="Logo - Tahupee"
+            >
+              <img src="img/logo-tahupee-display.png" alt="" />
+            </a>
+          </div>
+
+          <div class="projects__img">
+            <a
+              href="img/cylinder-tahupee.png"
+              data-lightbox="design"
+              data-title="Cylinder Packaging - Tahupee"
+            >
+              <img src="img/packaging-cylinder-tahupee-display.png" alt="" />
+            </a>
+          </div>
+
+          <div class="projects__img">
+            <a
+              href="img/snack-tahupee.png"
+              data-lightbox="design"
+              data-title="Snack Packaging - Tahupee"
+            >
+              <img src="img/packaging-snack-tahupee-display.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->
     <footer class="footer section">
-        <div class="footer__container bd-grid">
-            <h1 class="footer__title">Budi</h1>
-            <p class="footer__description">Saya Budi dan ini adalah website portofolio personal saya.</p>
+      <div class="footer__container bd-grid">
+        <h1 class="footer__title">Budi</h1>
+        <p class="footer__description">
+          Saya Budi dan ini adalah website portofolio personal saya.
+        </p>
 
-            <div class="footer__social">
-                <a href="https://www.instagram.com/budiiprayoga" class="footer__link" target="_blank"><i
-                        class='bx bxl-instagram'></i></a>
-                <a href="#" class="footer__link"><i class='bx bxl-twitter'></i></a>
-            </div>
-
-            <p class="footer__copy">By Budi Prayoga - 2022</p>
+        <div class="footer__social">
+          <a
+            href="https://www.instagram.com/budiiprayoga"
+            class="footer__link"
+            target="_blank"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://github.com/budiiprayoga" class="footer__link"
+            ><i class="bx bxl-github"></i
+          ></a>
         </div>
+
+        <p class="footer__copy">By Budi Prayoga - 2022</p>
+      </div>
     </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
 
     <!-- My JS -->
     <script src="js/script.js"></script>
-</body>
 
+    <!-- Lightbox JS -->
+    <script src="lightbox/lightbox-plus-jquery.js"></script>
+  </body>
 </html>
