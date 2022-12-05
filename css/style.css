@@ -15,6 +15,11 @@ body {
   background-color: #fffafa;
   color: #54423d;
   line-height: 1.6;
+  transition: background-color 0.5s;
+}
+
+body.dark {
+  background-color: #24292d;
 }
 
 h1,
@@ -58,11 +63,15 @@ img {
 
 .section-subtitle {
   display: block;
-  font-size: 0.813rem;
+  font-size: 0.938rem;
   color: #290f09;
   text-align: center;
   font-weight: 700;
   margin-bottom: 0.25rem;
+}
+
+body.dark .section-subtitle {
+  color: #fffafa;
 }
 
 .bd-grid {
@@ -84,6 +93,11 @@ img {
   z-index: 100;
   background-color: #fffafa;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s;
+}
+
+body.dark .header-1 {
+  background-color: #323840;
 }
 
 .nav {
@@ -100,7 +114,9 @@ img {
   width: 50%;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
   background-color: #cc4b2c;
   transition: 0.5s;
 }
@@ -134,6 +150,46 @@ img {
   color: #662616;
   font-size: 1.3rem;
   cursor: pointer;
+  transition: color 0.5s;
+}
+
+body.dark .nav__toggle {
+  color: #fffafa;
+}
+
+body.dark .nav__logo {
+  color: #fffafa;
+}
+
+.toggle__theme {
+  background-color: #fffafa;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  margin-left: 3em;
+  transition: background-color 0.5s;
+}
+
+body.dark .toggle__theme {
+  background-color: #24292d;
+}
+
+.toggle__theme::before {
+  content: "\eb94";
+  font-family: Boxicons;
+  text-align: center;
+  font-size: 18px;
+  color: #290f09;
+}
+
+body.dark .toggle__theme::before {
+  content: "\ec34";
+  color: #fffafa;
 }
 
 .show {
@@ -184,6 +240,10 @@ img {
   font-size: 0.813rem;
   color: #662616;
   margin-bottom: 2.5rem;
+}
+
+body.dark .home__kuliah {
+  color: #fffafa;
 }
 
 .home__social {

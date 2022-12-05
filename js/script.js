@@ -46,6 +46,13 @@ function scrollActive() {
   });
 }
 
+// =============== THEME MODE ===============
+const sec = document.querySelector(".sec__body");
+const toggle = document.querySelector(".toggle__theme");
+toggle.onclick = function () {
+  sec.classList.toggle("dark");
+};
+
 // =============== GSAP ANIMATION ===============
 TweenMax.from(".home__img", 1, {
   delay: 0.2,
